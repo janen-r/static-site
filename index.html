@@ -3,51 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Site - Caching Test</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0070f3;
-            color: white;
-            padding: 20px;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ddd;
-        }
-        img {
-            width: 300px;
-            height: auto;
-            border-radius: 10px;
-        }
-    </style>
+    <title>Home - Static Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">My Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container text-center mt-5">
         <h1>Welcome to My Static Site</h1>
-        <p>This site is hosted on Vercel and tests caching behavior.</p>
-    </header>
+        <p>This is the home page. Hosted on Vercel with proper routing.</p>
+        <img src="https://picsum.photos/id/1/300/300" alt="Example Image" class="img-fluid rounded">
+    </div>
 
-    <section>
-        <h2>About This Page</h2>
-        <p>This is a simple static site that includes HTML, CSS, and JavaScript.</p>
-        <p>It is designed to demonstrate Vercel's caching mechanism.</p>
-    </section>
-    
-    <section>
-        <h2>Example Image</h2>
-        <img src="https://picsum.photos/id/1/300/300" alt="Example Image">
-    </section>
-
-    <footer>
+    <!-- Footer -->
+    <footer class="text-center mt-5 p-3 bg-light">
         <p>© 2025 Static Site. Hosted on Vercel.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
