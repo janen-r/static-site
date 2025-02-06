@@ -39,12 +39,7 @@
         <p>This is a simple static site that includes HTML, CSS, and JavaScript.</p>
         <p>It is designed to demonstrate Vercel's caching mechanism.</p>
     </section>
-
-    <section>
-        <h2>Cached Timestamp</h2>
-        <p>Last updated: <span id="cache-time">Loading...</span></p>
-    </section>
-
+    
     <section>
         <h2>Example Image</h2>
         <img src="https://picsum.photos/id/1/300/300" alt="Example Image">
@@ -54,11 +49,5 @@
         <p>© 2025 Static Site. Hosted on Vercel.</p>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const cacheTime = new Date().toLocaleString();
-            document.getElementById("cache-time").textContent = cacheTime;
-        });
-    </script>
 </body>
 </html>
